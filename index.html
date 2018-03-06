@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title>queue.js | localstorage + AJAX</title>
+		<link rel="stylesheet" type="text/css" href="style/css/queue.css">
+	</head>
+	<body>
+		
+		<div class="center">
+			<div class="wrapper">
+				<div class="queue">
+
+					<!-- input field ~ text -->
+					<div class="queue-block">
+						<input type="text" data-queue="text" class="queue-item" placeholder="text...">
+					</div>
+
+					<!-- input field ~ number -->
+					<div class="queue-block">
+						<input type="text" data-queue="number" class="queue-item" placeholder="1000">
+					</div>
+
+					<!-- input field ~ email -->
+					<div class="queue-block">
+						<input type="text" data-queue="email" class="queue-item" placeholder="me@example.com">
+					</div>
+
+					<!-- input field ~ password -->
+					<div class="queue-block">
+						<input type="password" data-queue="password" class="queue-item" placeholder="••••••••">
+					</div>
+
+					<!-- input field ~ radio -->
+					<div class="queue-block">
+						<div data-queue="radio" class="queue-item"></div>
+						<div data-queue="radio" class="queue-item"></div>
+						<div data-queue="radio" class="queue-item"></div>
+					</div>
+
+					<!-- input field ~ checkbox -->
+					<div class="queue-block">
+						<div data-queue="checkbox" class="queue-item"></div>
+					</div>
+
+					<!-- input field ~ select -->
+					<div class="queue-block">
+						<select data-queue="select" class="queue-item">
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+						</select>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+	</body>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="style/js/queue.js"></script>
+	<script>
+		var queue = new Queue();
+		queue.init();
+	</script>
+
+</html>
